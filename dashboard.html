@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Alignment Discipleship</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-page">
+    <!-- Navigation -->
+    <nav class="nav nav-dashboard">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="/" class="logo">Alignment</a>
+                </div>
+                <div class="nav-links">
+                    <div id="user-info" class="user-info"></div>
+                    <button id="sign-out-btn" class="btn btn-small btn-outline">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1 class="dashboard-title">Your Resources</h1>
+                <p class="dashboard-subtitle">Access all your discipleship materials</p>
+            </div>
+
+            <!-- Resources Grid -->
+            <div class="resources-grid">
+                <!-- PowerPoint Resources -->
+                <div class="resource-category">
+                    <div class="category-header">
+                        <div class="category-icon">📊</div>
+                        <h2 class="category-title">PowerPoint Presentations</h2>
+                    </div>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <h3 class="resource-title">Week 1: Introduction to Alignment</h3>
+                                <p class="resource-meta">PowerPoint • 2.4 MB</p>
+                            </div>
+                            <button class="btn btn-small btn-primary resource-download" data-type="ppt">Download</button>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <h3 class="resource-title">Week 2: Foundations of Faith</h3>
+                                <p class="resource-meta">PowerPoint • 3.1 MB</p>
+                            </div>
+                            <button class="btn btn-small btn-primary resource-download" data-type="ppt">Download</button>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <h3 class="resource-title">Week 3: Walking in Truth</h3>
+                                <p class="resource-meta">PowerPoint • 2.8 MB</p>
+                            </div>
+                            <button class="btn btn-small btn-primary resource-download" data-type="ppt">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PDF Resources -->
+                <div class="resource-category">
+                    <div class="category-header">
+                        <div class="category-icon">📄</div>
+                        <h2 class="category-title">Study Guides & PDFs</h2>
+                    </div>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <h3 class="resource-title">Participant Workbook</h3>
+                                <p class="resource-meta">PDF • 1.2 MB</p>
+                            </div>
+                            <button class="btn btn-small btn-primary resource-download" data-type="pdf">Download</button>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <h3 class="resource-title">Leader's Guide</h3>
+                                <p class="resource-meta">PDF • 1.8 MB</p>
+                            </div>
+                            <button class="btn btn-small btn-primary resource-download" data-type="pdf">Download</button>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <h3 class="resource-title">Discussion Questions</h3>
+                                <p class="resource-meta">PDF • 0.5 MB</p>
+                            </div>
+                            <button class="btn btn-small btn-primary resource-download" data-type="pdf">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio Resources -->
+                <div class="resource-category">
+                    <div class="category-header">
+                        <div class="category-icon">🎧</div>
+                        <h2 class="category-title">Audio Resources</h2>
+                    </div>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <h3 class="resource-title">Week 1: Teaching Audio</h3>
+                                <p class="resource-meta">MP3 • 45:32 • 42 MB</p>
+                            </div>
+                            <button class="btn btn-small btn-primary resource-download" data-type="audio">Download</button>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <h3 class="resource-title">Week 2: Teaching Audio</h3>
+                                <p class="resource-meta">MP3 • 48:15 • 44 MB</p>
+                            </div>
+                            <button class="btn btn-small btn-primary resource-download" data-type="audio">Download</button>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <h3 class="resource-title">Worship & Reflection</h3>
+                                <p class="resource-meta">MP3 • 32:20 • 30 MB</p>
+                            </div>
+                            <button class="btn btn-small btn-primary resource-download" data-type="audio">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Section -->
+            <div class="dashboard-support">
+                <div class="support-card">
+                    <h3 class="support-title">Need Help?</h3>
+                    <p class="support-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our support team is here to help.</p>
+                    <a href="mailto:support@alignment.org" class="btn btn-secondary">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-dashboard">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="logo">Alignment</h3>
+                </div>
+                <div class="footer-links">
+                    <a href="/" class="footer-link">Home</a>
+                    <a href="mailto:support@alignment.org" class="footer-link">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/dashboard.js"></script>
+</body>
+</html>
