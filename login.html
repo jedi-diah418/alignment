@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Alignment Discipleship</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <!-- Navigation -->
+    <nav class="nav nav-simple">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="/" class="logo">Alignment</a>
+                </div>
+                <div class="nav-links">
+                    <a href="/" class="nav-link">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <h1 class="auth-title">Welcome Back</h1>
+                    <p class="auth-subtitle">Access your discipleship resources</p>
+                </div>
+
+                <!-- Clerk will inject the sign-in component here -->
+                <div id="clerk-signin"></div>
+
+                <div class="auth-footer">
+                    <p class="auth-help">Need help? <a href="mailto:support@alignment.org">Contact Support</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="/src/auth.js"></script>
+</body>
+</html>
